@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Bt7"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/Bt8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Bt8"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/Bt9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bt7" />
+
+    <Button
+        android:id="@+id/Bt9"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bt8" />
+
+    <Button
+        android:id="@+id/Bt4"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toTopOf="@+id/Bt7"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/Bt5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Bt5"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toTopOf="@+id/Bt8"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/Bt6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bt4" />
+
+    <Button
+        android:id="@+id/Bt6"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toTopOf="@+id/Bt9"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bt5" />
+
+    <Button
+        android:id="@+id/Bt1"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        android:textColorHighlight="#00FF0000"
+        android:textColorLink="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Bt4"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/Bt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Bt2"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toTopOf="@+id/Bt5"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/Bt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bt1" />
+
+    <Button
+        android:id="@+id/Bt3"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ponerFicha"
+        app:layout_constraintBottom_toTopOf="@+id/Bt6"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bt2" />
+
+    <TextView
+        android:id="@+id/TxGanador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has ganado"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/Bt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
